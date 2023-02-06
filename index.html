@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Collector Games</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Crystal Collector</h1>
+        </div>
+    </header>
+    <main>
+        <div class="first-div">
+            <div class="instructions">
+                <h2>Instructions</h2>
+            </div>
+            <div class="rule">
+                <p>You will be given a random number at the start of the game. There are four crystals below. By
+                    clicking on a crystal you will add a specific amount of points to your total score. You win the game
+                    by matching your total score to random number, you lose the game if your total score goes above the
+                    random number. The value of each crystal is hidden from you until you click on it. Each time when
+                    the game starts, the game will change the values of each crystal</p>
+            </div>
+        </div>
+        <div class="game">
+            <div>
+                <div class="score">
+                    <div class="target-score-left">
+                        <h3>Target Score</h3>
+                        <p id="target_score">0</p>
+                    </div>
+                    <div class="target-score-right">
+                        <h3>Your Score</h3>
+                        <p id="your_score">0</p>
+                    </div>
+                </div>
+                <div class="win-count">
+                    <h3>Win Count</h3>
+                    <p id="win_count">0</p>
+                </div>
+            </div>
+            <div class="second">
+                <div class="crystal-image">
+                    <h3>Crystal Selection</h3>
+                    <div>
+                        <img id="blue_crystal" src="/image/blue.png" alt="">
+                        <img id="green_crystal" src="/image/green.png" alt="">
+                        <img id="red_crystal" src="/image/red.png" alt="">
+                        <img id="yellow_crystal" src="/image/yellow.png" alt="">
+                    </div>
+                    <h4>Loss Count</h4>
+                    <p id="loss_count">0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/game.js"></script>
+
+</html>
